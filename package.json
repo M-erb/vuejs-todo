@@ -1,0 +1,26 @@
+{
+  "name": "Firstv-uejs-todo-app",
+  "version": "1.0.0",
+  "description": "Fun test app with vuejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "na"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author": "merb",
+  "license": "ISC",
+  "bugs": {
+    "url": "README.md"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}

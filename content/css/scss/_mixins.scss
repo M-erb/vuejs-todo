@@ -1,0 +1,36 @@
+@mixin flexBox() {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+}
+@mixin justifyContent($just) {
+  -webkit-justify-content: $just;
+  -moz-justify-content: $just;
+  -ms-justify-content: $just;
+  justify-content: $just;
+}
+@mixin flexWrap($value) {
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+@mixin alignItems($value) {
+  -webkit-align-items: $value;
+  -moz-align-items: $value;
+  -ms-align-items: $value;
+  align-items: $value;
+}
+@mixin alignSelf($value) {
+  -webkit-align-self: $value;
+  -moz-align-self: $value;
+  -ms-align-self: $value;
+  align-self: $value;
+}
+@mixin flex($values) {
+  -webkit-flex: $values;
+  -moz-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}

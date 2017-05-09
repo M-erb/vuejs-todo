@@ -1,0 +1,14 @@
+@import 'var';
+
+.todo_form {
+  max-width: 300px;
+}
+.todolist_wrap {
+  .flex_start {
+    transition: all 0.3s;
+  }
+  .done {
+    color: $light_gray;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,100 @@
+@import 'var';
+
+// custom cards
+.teamMembers_box {
+  margin: 80px 0;
+}
+.teamMember_card {
+  background: lighten($light_gray, 15%);
+  width: 180px;
+  margin: 20px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+  .text_body {
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+// customer reviews
+
+.reviews_container {
+  position: relative;
+  .reviews_card {
+    position: relative;
+    background: $difused_gray;
+    width: 100%;
+    margin: 50px 30px;
+    img {
+      width: 100px;
+      position: absolute;
+      border-radius: 50%;
+      top: -60px;
+      left: -5px;
+    }
+    .text_body {
+      padding: 50px 25px 25px;
+      margin: 0;
+      color: lighten($gray, 5%);
+      border-left: 20px solid lighten($secColor, 10%);
+      background: $difused_gray;
+    }
+    blockquote {
+      margin: 0;
+      padding: 15px 0;
+      font-weight: 600;
+      font-style: italic;
+      border-left: none;
+      background: none;
+      color: inherit;
+    }
+    p {
+      text-align: right;
+    }
+  }
+}
+
+.btn_box {
+  margin: 0.8em 0.8em 0.8em 0;
+}
+
+// Searchable list
+
+// .searchable_list {
+//   margin: 10px 0;
+//   li {
+//     margin: 10px 0;
+//     span {
+//       margin: 0;
+//       &:first-child {
+//         margin: 0 10px;
+//       }
+//       &:last-child {
+//         margin: 0 10px;
+//       }
+//       &:before {
+//         content: '-';
+//         margin-right: 10px;
+//       }
+//       &:after {
+//         content: '-';
+//         margin-left: 10px;
+//       }
+//       &:first-child:before {
+//         content: '';
+//       }
+//       &:first-child:after {
+//         content: '';
+//       }
+//       &:last-child:before {
+//         content: '';
+//       }
+//       &:last-child:after {
+//         content: '';
+//       }
+//     }
+//   }
+// }

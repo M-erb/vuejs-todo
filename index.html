@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <base href="/" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="application-name" content=""/>
+  <meta name="description" content="A good place to start with new Angular project">
+  <meta name="keywords" content="Start, begin, path, begining">
+  <meta name="theme-color" content="#7BD5ED">
+  <meta name="p:domain_verify" content="e22136ab81ca3341b04755aadb53f77f"/>
+  <title>Web App Skeleton</title>
+  <link rel="icon" href="content/img/favicon.ico" type="image/x-icon" />
+  <!--CSS-->
+  <link rel="stylesheet" href="content/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--JS-->
+  <!-- <script src="content/js/headroom.js"></script> -->
+  <!-- <script src="content/js/wow.min.js"></script> -->
+  <!-- <script>new WOW().init();</script> -->
+  <!--vuejs-->
+  <script src="https://unpkg.com/vue@2.3.2"></script>
+  <script src="app/app.js"></script>
+</head>
+  <body>
+    <header class="header">
+      <div class="page_wrap">
+        <h1>To Dos</h1>
+      </div>
+    </header>
+
+    <div id="app">
+      <div class="mini_page_section">
+        <div class="page_wrap">
+          <div class="todo_form">
+            <div class="me_input">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" v-model="todo.title">
+            </div>
+            <div class="me_input">
+              <label for="description">Description</label>
+              <textarea type="text" name="description" id="description" v-model="todo.description"></textarea>
+            </div>
+            <div class="me_input">
+              <label for="dueDate">Due Date</label>
+              <input type="text" name="dueDate" id="dueDate" v-model="todo.dueDate">
+            </div>
+            <div class="btn_wrap_topbottom">
+              <button class="btn_secondary" v-on:click="addTodo">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mini_page_section">
+        <div class="page_wrap">
+          <ul class="todolist_wrap">
+            <li v-for="item in todoList" class="flex_start" v-bind:class="{done:item.isDone}">
+              <div class="checkbox">
+                <input type="checkbox" name="done" v-model="item.isDone">
+              </div>
+              <div class="todo_info">
+                <h4>{{item.title}} - {{item.id}}</h4>
+                <p>{{item.description}}</p>
+                <p class="created">{{item.dateCreated}}</p>
+              </div>
+              <div class="btn_wrap_topbottom">
+                <button class="btn_notice_s" v-on:click="deleteTodo(item.id)">X</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

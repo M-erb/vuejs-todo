@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+//@import url('https://fonts.googleapis.com/css?family=Allura');
+//@import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps');
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,300';
+//@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+// general colors and controls
+$black: #323738;
+$gray: #53595C;
+$light_gray: #C1CAD6;
+$difused_gray: rgba(239, 241, 244, 0.8);
+$controls: #ACB5BF;
+$placeholder: rgba(180,180,180,.6);
+$approved: #2ecc71;
+$warning: #DE3636;
+
+//  color palette
+$primColor: #66C7F4;
+$secColor: #6C6EA0;
+$accentColor: #C1CAD6;
+$noticeColor: #FF4349;//F04347
+$baseColor: #FFFFFF;
+
+// nav colors
+$nav_c: $black;
+$nav_alt: #fff;
+$nav_bkgd: transparent;
+$nav_bkgd_alt: rgba(41,41,41,.9);
+
+// fonts
+$titlesFont: Raleway, sans-serif;
+$readFont: 'Open Sans', sans-serif;
+$controlsFont: $readFont;
+
+// hero
+$heroImg: '../img/277H-LG.jpg';
