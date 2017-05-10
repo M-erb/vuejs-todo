@@ -4,7 +4,6 @@ window.onload = function() {
     data: {
       message: 'hello world',
       todoList: [{
-        id: 0,
         title: 'Create',
         description: 'Create something that is awesome',
         dateCreated: 'Today',
@@ -12,7 +11,6 @@ window.onload = function() {
         isDone: true
       }],
       todo: {
-        id: null,
         title: '',
         description: '',
         dateCreated: '',
@@ -23,7 +21,6 @@ window.onload = function() {
     methods: {
       addTodo: function() {
         var newTodo = {
-          id: this.todoList.length,
           title: this.todo.title,
           description: this.todo.description,
           dateCreated: new Date(),
@@ -40,15 +37,12 @@ window.onload = function() {
           isDone: false
         }
       },
-      deleteTodo: function(index) {
-        for (var i = 1; i < this.todoList.length; i++) {
-          if(this.todoList[i].id === index) {
-            console.log(index)
-            this.todoList[i].splice(index, 1)
-            break
-          }
-        }
+      deleteTodo: function(item) {
+        var index = this.todoList.indexOf(item)
+        this.todoList.splice(index,1)
       }
     }
   })
+
+
 }

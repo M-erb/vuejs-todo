@@ -46,7 +46,7 @@
               <input type="text" name="dueDate" id="dueDate" v-model="todo.dueDate">
             </div>
             <div class="btn_wrap_topbottom">
-              <button class="btn_secondary" v-on:click="addTodo">Add</button>
+              <button class="btn_secondary" v-on:click="addTodo()">Add</button>
             </div>
           </div>
         </div>
@@ -59,12 +59,12 @@
                 <input type="checkbox" name="done" v-model="item.isDone">
               </div>
               <div class="todo_info">
-                <h4>{{item.title}} - {{item.id}}</h4>
+                <h4>{{item.title}}</h4>
                 <p>{{item.description}}</p>
                 <p class="created">{{item.dateCreated}}</p>
               </div>
               <div class="btn_wrap_topbottom">
-                <button class="btn_notice_s" v-on:click="deleteTodo(item.id)">X</button>
+                <button class="btn_notice_s" v-on:click="deleteTodo(item)">X</button>
               </div>
             </li>
           </ul>
